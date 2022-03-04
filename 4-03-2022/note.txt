@@ -1,0 +1,5 @@
+callback sorunu: asenkron çalıştırmalarda sorunlar çıkartmakta. Asenkron işlemlerde sıkışıklıklarda okuma sorunları ile karşılaşılmakta.
+bu sorunu çözmek için Promise fonksiyonu eklenmiştir.  daha basite çevirmek için promise async ve await kullanabiliriz
+
+.then çalışması için fonksiyondan return dönmesi gerekmektedir.
+Asenkron fonksiyonda çalışırken try catch blokları kullanılması önemlidir.
