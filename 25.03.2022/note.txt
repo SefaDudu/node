@@ -1,0 +1,14 @@
+$ npm init -y  package.json eklemek için yazılır.
+$ npm i express ile express.js kurulur
+$ npm nodemon ile anlık yapılan görme işlemleri için kullanılır.
+middleware => ara katman , gitme ve gelme işlemlerindeki bazı uygulamaları sürekli yazmak yerine 
+bir kere yazmaya yarar.
+app.use(express.json()); jsonu anlaması için bir middleware .net tarafında attribute 
+
+authentication => kimlik doğrulama
+authorization => yetkilendirme
+ 
+
+ cors => Cross-Origin Resource Sharing (Kökenler arası kaynak paylaşımı) anlamına gelen CORS, web tarayıcısı tarafından yönetilen ve ek HTTP başlıkları kullanılarak, bir kökende çalışan web uygulamasının, farklı bir kökende yer alan web uygulamasına erişim izni kontrolünü sağlayan mekanizmadır. Web uygulaması, internet tarayıcısı üzerinden farklı bir kökene (protokol, domain ve port) herhangi bir istek gönderirse cross-origin HTTP isteği oluşturmuş olur.
+
+error hangling => Hata işleme bir bilgisayar programının çalıştığı sırada hata ya da istisnai bir durumla karşılaşması durumunda meydana gelen özel durumda yapılması gereken işlemlerin genel adıdır. Özelleşmiş programlama dili yapıları, kesme gibi donanım işlergeleri ve işletim sistemleri tarafından yerine getirilebilmektedir. Vikipedi
