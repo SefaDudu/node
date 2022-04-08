@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/SefaDudu/node/issues"
   },
-  "homepage": "https://github.com/SefaDudu/node#readme"
+  "homepage": "https://github.com/SefaDudu/node#readme",
+  "dependencies": {
+    "mongodb": "^4.5.0"
+  }
 }

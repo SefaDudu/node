@@ -1,0 +1,58 @@
+NodeJS Nedir?
+- NodeJS, JavaScript ile yazılmış bir programı çalıştırmak için gerekli olan her şeyi
+içerir. 
+
+- NodeJS, Javascript kodunu sadece tarayıcılarda değil, aynı zamanda bilgisayar
+ortamında da çalışmasını sağlamıştır.
+- Böylelikle C# ve Python gibi dillerin seviyesine çıkmıştır.
+- Node js, V8 isimli bir javascript motoru üzerinde çalışır. 
+
+- NodeJS ve V8, C++ ile geliştirilmiştir. Javascript kodlarını makine diline çevirir.
+
+Nasıl Çalışır ?
+- libuv
+- C++ kodlarını derler
+- I/O ve Event Loop (thread) işlemleri yönetir.
+- Thread
+- İş parçacıkları
+- 1 program için, 1 process çalışır
+- Her bir process için bir veya birden fazla thread çalışır
+- Threadler arka arkaya komutlar bulunduran iş parçacıklarıdır
+- Javascript single-threaded bir dildir. Aynı anda bir thread çalıştırır.
+- Aynı anda iki iş yapılırsa !!!
+- Böyle bir durumda javascript kodu bir event-loop üzerinde çalışır
+- Event-loop ile iş parçaları belirli bir sıraya konulur.
+- I/O ve network işlemlerini non-blocking olarak çalıştırdığı için ciddi bir
+performans kazancı sağlamaktadır.
+- Event-loop ?
+- Javascript run-time daki tüm event ve callback’ler bir kuyrukta tutulur. Thread
+her defasında kuyruktaki ilk eventi işler. Bu işleme Event Loop adı verilir.
+- Her bir task beklemeden gerekli olan yere (database, file gibi) iletilir. Bu işlerin
+bitti bilgisi, geriye callback ile bize gönderilir.
+- Bu sisteme event-driven çalışma şeklide denmektedir.
+3
+- Blocking ve Non-Blocking
+- Blocking methodlar senkron calisir, yani bir is bitmeden digeri baslamaz.
+- Non-blocking methodlar asenkron calisir, yani bir is yaparken araya baska isler
+de girebilir, bir isin sonucunu beklerken baska isler yapilabilir.
+- Asenkron işlerin yürütülmesi ?
+- Javascript’de bazı özel fonksiyonlar (setTimeout, setInterval gibi), işletim
+sistemleri (port’dan veri okuma) ve dosya işlemleri gibi işler call stack’de belirli
+bir sıraya sokulurlar.
+- Event-loop bekleme sırasındaki işleri düzenli olarak kontrol eder. Daha sonra
+bekleme sırasında ki işleri alarak çalıştırmaya başlar.
+Javascript Karşılaştırması
+- Javascript single thread’dir ve senkron olarak çalışır. Tek bir call stack vardır. Bir
+seferde tek bir kod parçası çalıştırabilir.
+- NodeJS ise libuv library ve callback sayesinde asenkron olarak çalışabilmektedir.
+- Yani javascript gelen işleri, nodejs yapısına tek tek gönderir. Nodejs işlerin
+bitmesini callback işlemine bağladığı için, her bir işin bitmesini beklemez.
+Dolayısıyla javascript tarafındaki işleri hemen alır.
+4
+NPM - Node Package Manager
+- Npm temel olarak 3. parti yazılımları yüklemeyi sağlayan bir araçtır
+- NodeJS ile birlikte yüklenir.
+- Versiyon kontrol komutu, npm -v
+- Paket yükleme => npm install ……
+- Paket silme => npm uninstall ….
+- Paket güncelleme => npm update …..
