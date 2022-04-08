@@ -46,7 +46,7 @@ const errorHandler = require("./middle/errorHandler")
 //  app.use(cors({
 //    origin: ['http://localhost:3000/', 'https://www.google.com/']
 // }));
-app.get("/test/:id",(req,res,next) => {
+app.get("login",(req,res,next) => {
 
    if(req.params.id==1){ 
 next({
