@@ -1,0 +1,4 @@
+Express Handlebars -> freamework okuyucusu .net asp.net mvc otomatik olara kgelmekte.
+express handlebars ile mvc yapısını okumamıza yarar.
+
+app.set : key ve value ilişkisini tutar,
