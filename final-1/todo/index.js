@@ -17,7 +17,8 @@ const hbs = exhbs.create({
     app.engine('hbs',hbs.engine)
     app.set('view engine', 'hbs');
     app.set('views', './views');
-
+app.use(express.urlencoded({extended:true}));// html body datasını ayıklamaya yarar
+app.use(express.static('public'))
 app.use(todoRoutes);
 async function start(){
 try {
